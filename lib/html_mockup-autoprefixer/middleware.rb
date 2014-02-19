@@ -1,12 +1,16 @@
 module HtmlMockupAutoprefixer
   class Middleware
-    def initialize(app)
+    def initialize(app, options={})
       @app = app
+      @options = {
+        :skip => []
+      }.update(options)
     end
 
     def call(env)
       status, headers, body = @app.call(env)
-      if status == 200 && headers["Content-Type"].to_s.include?("text/css")
+      
+      if status == 200 && headers["Content-Type"].to_s.include?("text/css") && !@options[:skip].detect{|r| r.match(env["PATH_INFO"]) }
         body_str = []
         body.each{|f| body_str << f }
         body_str = body_str.join
