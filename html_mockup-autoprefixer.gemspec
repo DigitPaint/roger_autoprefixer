@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = "html_mockup-autoprefixer"
-  s.version = "0.0.1"
+  s.version = "0.1.0"
   
   s.authors = ["Flurin Egger"]
   s.email = ["info@digitpaint.nl", "flurin@digitpaint.nl"]  
