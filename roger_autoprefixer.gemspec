@@ -1,8 +1,8 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.version = "0.1.0"
   s.name = "roger_autoprefixer"
+  s.version = "1.0.0"
   
   s.authors = ["Flurin Egger"]
   s.email = ["info@digitpaint.nl", "flurin@digitpaint.nl"]  
