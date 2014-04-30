@@ -1,4 +1,4 @@
-module HtmlMockupAutoprefixer
+module RogerAutoprefixer
   class Processor
     # @option options [Array] :match An array of shell globs, defaults to ["stylesheets/**/*.scss"]
     # @option options [Array] :skip An array of regexps which will be skipped, defaults to [/_.*\.scss\Z/], Attention! Skipped files will be deleted as well!
@@ -26,3 +26,5 @@ module HtmlMockupAutoprefixer
     end    
   end
 end
+
+Roger::Release::Processors.register(:autoprefixer, RogerAutoprefixer::Processor)

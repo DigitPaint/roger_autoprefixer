@@ -1,13 +1,13 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = "html_mockup-autoprefixer"
   s.version = "0.1.0"
+  s.name = "roger_autoprefixer"
   
   s.authors = ["Flurin Egger"]
   s.email = ["info@digitpaint.nl", "flurin@digitpaint.nl"]  
-  s.homepage = "http://github.com/digitpaint/html_mockup"
-  s.summary = "Rack middleware and processor for using autoprefixer in HtmlMockup."
+  s.homepage = "http://github.com/digitpaint/roger_autoprefixer"
+  s.summary = "Rack middleware and processor for using autoprefixer with Roger."
   s.licenses = ["MIT"]
 
   s.date = Time.now.strftime("%Y-%m-%d")
@@ -19,6 +19,6 @@ Gem::Specification.new do |s|
   
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
 
-  s.add_dependency("html_mockup", ["~> 0.8.0"])
+  s.add_dependency("roger", ["~> 0.11.0"])
   s.add_dependency("autoprefixer-rails", ["~> 0.8.0"])
 end

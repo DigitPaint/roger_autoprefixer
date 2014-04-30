@@ -1,4 +1,4 @@
-module HtmlMockupAutoprefixer
+module RogerAutoprefixer
   class Middleware
     def initialize(app, options={})
       @app = app
