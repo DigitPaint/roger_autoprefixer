@@ -1,3 +1,5 @@
+require "roger/release"
+
 module RogerAutoprefixer
   class Processor
     # @option options [Array] :match An array of shell globs, defaults to ["stylesheets/**/*.scss"]
