@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 1.1.0
+* Major update for AutoprefixerRails
+* Add option to pass :browsers to Autoprefixer in Middleware and Processor
+
 ## Version 1.0.2
 * Be a little bit more relaxed about Roger versions
 
