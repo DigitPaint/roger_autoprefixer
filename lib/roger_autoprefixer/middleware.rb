@@ -1,9 +1,14 @@
 module RogerAutoprefixer
   class Middleware
+    # Middleware
+    #
+    # @option options [Array] :skip Array of regexp Skip certain URL's 
+    # @option options [Array] :browsers  Browsers to do autporefixing for passed to AutoprefixerRails
     def initialize(app, options={})
       @app = app
       @options = {
-        :skip => []
+        :skip => [],
+        :browsers => nil
       }.update(options)
     end
 
@@ -17,8 +22,16 @@ module RogerAutoprefixer
         
         # This is a dirty little hack to always enforce UTF8
         body_str.force_encoding("UTF-8")
+
+        prefixer_options = {
+          :from => env["PATH_INFO"]
+        }
+
+        if @options[:browsers]
+          prefixer_options[:browsers] = @options[:browsers]
+        end
       
-        Rack::Response.new(AutoprefixerRails.compile(body_str), status, headers).finish
+        Rack::Response.new(AutoprefixerRails.process(body_str, prefixer_options).css, status, headers).finish
       else
         [status, headers, body]
       end
