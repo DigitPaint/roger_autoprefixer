@@ -8,9 +8,10 @@ module RogerAutoprefixer
       fixture = File.read(File.dirname(__FILE__) + "/fixtures/" + file)
 
       # Always respond with the file contents in this little app
-      app = proc { [200, {
-        "Content-Type" => "text/css"
-        }, [fixture]] }
+      app = proc {
+              [200, {
+                "Content-Type" => "text/css"
+              }, [fixture]] }
 
       stack = Middleware.new(app, options)
       Rack::MockRequest.new(stack)
