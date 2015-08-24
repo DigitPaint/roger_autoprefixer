@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = "roger_autoprefixer"
-  s.version = "1.1.0"
+  s.version = "1.2.0"
 
   s.authors = ["Flurin Egger"]
   s.email = ["info@digitpaint.nl", "flurin@digitpaint.nl"]
