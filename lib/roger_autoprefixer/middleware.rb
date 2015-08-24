@@ -1,3 +1,4 @@
+require File.dirname(__FILE__) + "/./transformer"
 require "rack/response"
 
 module RogerAutoprefixer
@@ -31,7 +32,7 @@ module RogerAutoprefixer
 
         prefixer_options[:browsers] = @options[:browsers] if @options[:browsers]
 
-        Rack::Response.new(AutoprefixerRails.process(body_str, prefixer_options).css, status, headers).finish
+        Rack::Response.new(Transformer.instance.transform(body_str, prefixer_options), status, headers).finish
       else
         [status, headers, body]
       end
