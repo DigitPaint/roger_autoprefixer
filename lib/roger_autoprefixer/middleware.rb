@@ -1,3 +1,5 @@
+require "rack/response"
+
 module RogerAutoprefixer
   class Middleware
     # Middleware
