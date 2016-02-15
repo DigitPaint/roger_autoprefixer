@@ -1,5 +1,8 @@
 require "singleton"
-require 'autoprefixer-rails'
+# Force ExecJS the engine behind AutoprefixerRails
+# to use therubyracer
+require "therubyracer"
+require "autoprefixer-rails"
 
 # The transformer will take care of thread safe transformation of css without
 # vendor prefixes -> css with vendor prefixes using autoprefixer.
