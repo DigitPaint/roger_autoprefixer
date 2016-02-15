@@ -4,8 +4,8 @@ Gem::Specification.new do |s|
   s.name = "roger_autoprefixer"
   s.version = "1.2.0"
 
-  s.authors = ["Flurin Egger"]
-  s.email = ["info@digitpaint.nl", "flurin@digitpaint.nl"]
+  s.authors = ["Flurin Egger", "Edwin van der Graaf"]
+  s.email = ["info@digitpaint.nl", "flurin@digitpaint.nl", "edwin@digitpaint.nl"]
   s.homepage = "http://github.com/digitpaint/roger_autoprefixer"
   s.summary = "Rack middleware and processor for using autoprefixer with Roger."
   s.licenses = ["MIT"]
