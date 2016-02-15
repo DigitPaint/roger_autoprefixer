@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 1.3.0
+* Depend on therubyracer gem as it's much faster than the standard engine ExecJS uses.
+
 ## Version 1.1.0
 * Major update for AutoprefixerRails
 * Add option to pass :browsers to Autoprefixer in Middleware and Processor
