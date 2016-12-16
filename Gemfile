@@ -4,6 +4,6 @@ source "https://rubygems.org"
 gemspec
 
 # Add default runtime for ExecJS
-gem "therubyracer"
+gem "mini_racer"
 
 gem "pry"

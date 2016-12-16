@@ -1,7 +1,8 @@
 require "singleton"
+
 # Force ExecJS the engine behind AutoprefixerRails
-# to use therubyracer
-require "therubyracer"
+# to use mini_racer
+require "mini_racer"
 require "autoprefixer-rails"
 
 # The transformer will take care of thread safe transformation of css without
