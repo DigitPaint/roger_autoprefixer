@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency("roger", [">= 0.11.0"])
   s.add_dependency("autoprefixer-rails", [">= 5.0.0"])
-  s.add_dependency("therubyracer", [">= 0.12"])
+  s.add_dependency("mini_racer", [">= 0.1"])
 
   s.add_development_dependency "rake", "~> 10.0"
   s.add_development_dependency "test-unit", "~> 3.1.2"
