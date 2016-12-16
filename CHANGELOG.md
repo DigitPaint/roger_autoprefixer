@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 1.4.0
+* Update dependency of ExecJS engine to mini_racer since this is better
+  maintained.
+
 ## Version 1.3.0
 * Depend on therubyracer gem as it's much faster than the standard engine ExecJS uses.
 
