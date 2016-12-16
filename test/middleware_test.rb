@@ -19,7 +19,7 @@ module RogerAutoprefixer
 
     def test_middleware_processor
       response = build_stack("flex.css").get("/javascripts/src/test.js")
-      assert response.body.include?("-webkit-flex;")
+      assert response.body.include?("-webkit-box;")
       assert_equal response.status, 200
     end
   end
